@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./regist.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body class="start">
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+      <main layout="contents">
+        <section class="container">
+          <form id="formData" class="form-style">
+            <div class="input-box">
+              <div class="input-wrap">
+                <label for="name">이름</label>
+                <input type="text" id="name" placeholder="Name" />
+              </div>
+
+              <div class="input-wrap">
+                <label>성별</label>
+                <div class="input-line">
+                  <input type="radio" name="gender" id="female" />
+                  <label for="female">여자</label>
+                  <input type="radio" name="gender" id="male" />
+                  <label for="male">남자</label>
+                </div>
+              </div>
+
+              <div class="input-wrap">
+                <label>음/양력</label>
+                <div class="input-line">
+                  <input type="radio" name="lns" id="lunar" />
+                  <label for="lunar">음력</label>
+                  <input type="radio" name="lns" id="solar" />
+                  <label for="solar">양력</label>
+                </div>
+              </div>
+
+              <div class="input-wrap">
+                <label>생년월일</label>
+                <div class="flex-type">
+                  <select name="year" id="year">
+                    <option selected disabled>생년</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                  </select>
+                  <select name="month" id="month">
+                    <option selected disabled>월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                  <select name="day" id="day">
+                    <option selected disabled>일</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input-wrap">
+                <label>태어난 시</label>
+                <div class="flex-type">
+                  <select name="tile" id="tile" style="width: 100%">
+                    <option selected disabled>선택해주세요.</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <input type="submit" value="가입" />
+              <input type="button" value="취소" onclick="goMain()" />
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./signin.js"></script>
+  </body>
+</html>

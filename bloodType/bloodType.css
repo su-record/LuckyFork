@@ -1,0 +1,56 @@
+@charset "utf-8";
+.visual {
+  height: 290px;
+  background-image: url(/static/images/blood_visual.png);
+}
+
+.container {
+  padding-top: 40px;
+}
+
+.sort.active {
+  color: #de2f2f;
+  border-color: #de2f2f;
+}
+
+.blood-desc {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.blood-desc article {
+  padding: 50px 0;
+  border-top: 2px solid #ededed;
+}
+
+.blood-desc article:first-child {
+  padding-top: 0;
+  border-top: 0 none;
+}
+
+.blood-desc h1,
+.blood-desc .blood-type {
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 36px;
+  letter-spacing: -0.05em;
+  color: #222;
+}
+
+.blood-desc h1 {
+  margin-bottom: 30px;
+}
+
+.blood-desc h1:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 32px;
+  margin-right: 18px;
+  vertical-align: -3px;
+  background-image: url(/static/images/icon_blood.png);
+}
+
+.type-desc {
+  letter-spacing: -0.05em;
+  line-height: 1.4;
+}

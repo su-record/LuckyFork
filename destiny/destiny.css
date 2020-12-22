@@ -1,0 +1,205 @@
+@charset "utf-8";
+.visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 290px;
+  padding: 0 75px 25px 0;
+  background-image: url(/static/images/destiny_visual.png);
+}
+
+.visual h1 {
+  margin-right: 3px;
+  margin-bottom: 15px;
+  font-size: 46px;
+  color: #737941;
+}
+
+.visual p {
+  width: 303px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.container {
+  margin-top: 45px;
+}
+
+.summary {
+  padding: 0;
+}
+
+.user-destiny {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.user-destiny,
+.user-destiny span {
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  color: #222;
+}
+
+.summary-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: relative;
+}
+
+.summary-wrap:nth-child(even) {
+  margin-bottom: 80px;
+}
+
+.summary-wrap:nth-child(odd) {
+  margin-bottom: 110px;
+}
+
+.summary-wrap:last-child {
+  margin-bottom: 140px;
+}
+
+.summary-item {
+  width: 333px;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+.summary-item .tags span {
+  margin-right: 5px;
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  color: #999;
+}
+
+.summary-item .desc-wrap {
+  margin: 23px 0 30px;
+}
+
+.summary-item .desc-wrap dt {
+  height: 82px;
+  margin-bottom: 20px;
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+  color: #222;
+}
+
+.summary-item .desc-wrap dd {
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+}
+
+.summary-item .ellipsis.line-04 {
+  height: 5.2em;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.summary-item .more {
+  text-align: right;
+}
+
+.summary-item .more a {
+  display: inline-block;
+  width: 40px;
+  height: 26px;
+  font-size: 0;
+  background: url(/static/images/icon_right_arrow3.png) no-repeat;
+}
+
+.decoration {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.blossome {
+  height: 167px;
+  bottom: -110px;
+  background-image: url(/static/images/decoration_blossom.png);
+}
+
+.magpie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160px;
+  padding-left: 70px;
+  bottom: -127px;
+  background-image: url(/static/images/decoration_magpie.png);
+}
+
+.magpie span {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e1e1e1;
+}
+
+.landscape {
+  height: 157px;
+  bottom: -105px;
+  background-image: url(/static/images/decoration_landscape.png);
+}
+
+.folktale {
+  height: 199px;
+  bottom: -136px;
+  background-image: url(/static/images/decoration_folktale.png);
+}
+
+/* detail */
+.explanation h1 {
+  padding: 0 10px;
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 36px;
+  line-height: 68px;
+}
+
+.explanation .birth-belt {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.explanation .cow {
+  background-image: url(/static/images/character_cow.png);
+}
+
+.explanation .desc-wrap {
+  margin: 50px 0 80px;
+  padding: 0 20px;
+}
+
+.explanation .desc-wrap dt {
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  color: #222;
+}
+.explanation .desc-wrap dd {
+  margin-top: 50px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+  line-height: 1.5;
+}

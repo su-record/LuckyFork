@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.container {
+  padding-top: 60px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tablinks {
+  width: 222px;
+  height: 72px;
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  text-align: center;
+  font-weight: bold;
+  color: #cccccc;
+  border: 3px solid #cccccc;
+  border-radius: 36px;
+}
+
+.tablinks.active {
+  color: #ef8526;
+  border-color: #ef8526;
+}
+
+.tabContent {
+  margin-top: 40px;
+}
+
+.panel {
+  background-color: white;
+}
+
+.lnb {
+  padding: 0 5px;
+  font-size: 0;
+}
+.lnb a {
+  position: relative;
+  padding: 0 18px;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.lnb .active {
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  color: #ef8526;
+}
+
+.lnb a:before,
+.lnb a:after {
+  content: '';
+  height: 20px;
+  position: absolute;
+  top: 11px;
+  color: #ededed;
+  border-color: #ededed;
+}
+
+.lnb a:before {
+  left: 0;
+  border-left: 1px solid;
+}
+
+.lnb a:after {
+  right: 0;
+  border-right: 1px solid;
+}
+
+.lnb a:first-child:before {
+  padding-left: 0;
+  border: 0 none;
+}
+
+.lnb a:last-child:after {
+  padding-left: 0;
+  border: 0 none;
+}
+
+.question-nav {
+  margin-top: 50px;
+  text-align: right;
+  font-size: 0;
+}
+
+.question-nav a {
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;
+  padding: 0 25px;
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 24px;
+  color: #fff;
+  line-height: 55px;
+  letter-spacing: -0.05em;
+  border-radius: 10px;
+  background-color: #999;
+}
+
+.question-nav + div {
+  margin-top: 28px;
+}
+
+.state {
+  margin-right: 40px;
+}
+
+.state span {
+  display: none;
+}
+
+.complete {
+  padding: 3px;
+  color: #ef8526;
+  border-bottom: 2px solid #ef8526;
+}
+
+.receipt {
+  color: #999;
+}

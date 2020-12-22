@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+[layout='app'] {
+  padding-top: 0;
+}
+
+[layout='contents'] {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 275px;
+  padding-top: 497px;
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  font-size: 52px;
+  color: #625c1e;
+  background: url(/static/images/intro.png) no-repeat center top;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 32px;
+  line-height: 1.4;
+}

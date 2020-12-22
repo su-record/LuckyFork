@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="../static/library/tavo-calendar.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./mypage.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="../static/library/tavo-calendar.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div style="height: auto !important">
+      <div id="app" layout="app">
+        <header layout="header" include-html="/layout/header.html"></header>
+
+        <main layout="contents">
+          <div class="title visual">
+            <div class="profile-img-wrap">
+              <span class="profile-img">
+                <img src="/static/images/profile_img.png" alt="프로필 이미지" />
+              </span>
+              <span class="username">홍길동</span>
+            </div>
+            <div class="profile-desc-wrap">
+              <dl>
+                <dt>양력</dt>
+                <dd>1980년09월09일 자(子)시</dd>
+                <dt>음력</dt>
+                <dd>1980년09월09일 자(子)시</dd>
+              </dl>
+
+              <ul>
+                <li>소띠</li>
+                <li>사수자리</li>
+                <li class="modify">
+                  <a href="javascript:void(0)">프로필 수정</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <section class="container">
+            <div class="point-wrap">
+              <ul class="desc">
+                <li>현재포인트 : <span class="point">4,500</span>점</li>
+                <li>소멸포인트 : <span class="point">4,500</span>점</li>
+              </ul>
+              <ul class="history">
+                <li>
+                  <span>구매포인트: <span class="point">1,000</span>점</span>
+                  <a href="javascript:void(0)" onclick="goHistory('buy')"
+                    >구매히스토리 <i></i
+                  ></a>
+                  <a
+                    href="javascript:void(0)"
+                    onclick="goStore('buy')"
+                    class="buying"
+                    >구매하러하기 <i></i
+                  ></a>
+                </li>
+                <li>
+                  <span>충전포인트: <span class="point">2,000</span>점</span>
+                  <a href="javascript:void(0)" onclick="goHistory('charge')"
+                    >충전히스토리 <i></i
+                  ></a>
+                  <a
+                    href="javascript:void(0)"
+                    onclick="goStore('charge')"
+                    class="buying"
+                    >충전하러하기 <i></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="nav-wrap">
+              <a href="/alarm" class="btn-alarm">알림함</a>
+              <a href="/event" class="btn-event">이벤트</a>
+              <a href="/serviceCenter" class="btn-center">고객센터</a>
+            </nav>
+
+            <div class="lucky-wrap">
+              <div class="tabs">
+                <button class="tablinks active">일간</button>
+                <button class="tablinks">주간</button>
+                <button class="tablinks">월간</button>
+                <button class="tablinks calendar">캘린더로 보기</button>
+              </div>
+
+              <div class="calendar-wrap">
+                <div id="my-calendar"></div>
+              </div>
+
+              <ul class="progress-wrap">
+                <li>
+                  <div class="progress">
+                    <svg
+                      class="progress-circle"
+                      width="200px"
+                      height="200px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        class="progress-circle-back"
+                        cx="80"
+                        cy="80"
+                        r="74"
+                      ></circle>
+                      <circle
+                        class="progress-circle-prog"
+                        cx="80"
+                        cy="80"
+                        r="74"
+                      ></circle>
+                    </svg>
+                    <div class="progress-text" data-progress="0">
+                      0<span class="percent">%</span>
+                    </div>
+                  </div>
+                  <span class="progress-name">성격</span>
+                </li>
+                <li>
+                  <div class="progress">
+                    <svg
+                      class="progress-circle"
+                      width="200px"
+                      height="200px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        class="progress-circle-back"
+                        cx="80"
+                        cy="80"
+                        r="74"
+                      ></circle>
+                      <circle
+                        class="progress-circle-prog"
+                        cx="80"
+                        cy="80"
+                        r="74"
+                      ></circle>
+                    </svg>
+                    <div class="progress-text" data-progress="0">
+                      0<span class="percent">%</span>
+                    </div>
+                  </div>
+                  <span class="progress-name">애정</span>
+                </li>
+                <li>
+                  <div class="progress">
+                    <svg
+                      class="progress-circle"
+                      width="200px"
+                      height="200px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        class="progress-circle-back"
+                        cx="80"
+                        cy="80"
+                        r="74"
+                      ></circle>
+                      <circle
+                        class="progress-circle-prog"
+                        cx="80"
+                        cy="80"
+                        r="74"
+                      ></circle>
+                    </svg>
+                    <div class="progress-text" data-progress="0">
+                      0<span class="percent">%</span>
+                    </div>
+                  </div>
+                  <span class="progress-name">행운</span>
+                </li>
+              </ul>
+
+              <p class="user-desc">
+                박준홍 님의 오늘의 행운 지수는 90점 입니다. 기분은 상쾌하고
+                정신이 맑아 무엇이나 할 수 있을 것 같은 자신감이 생기게 될 것
+                입니다.
+              </p>
+
+              <div class="result-card">
+                <div class="pink-line"><span>丁</span><span>之</span></div>
+                <div class="green-line"><span>之</span><span>之</span></div>
+                <div class="grey-line"><span>之</span><span>成</span></div>
+                <div class="yellow-line"><span>之</span><span>之</span></div>
+                <a href="">박준홍님의 기본 성향 보러 가기</a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer layout="footer" include-html="/layout/footer.html"></footer>
+      </div>
+    </div>
+
+    <script>
+      const tablinks = document.querySelectorAll('.tablinks');
+      const myCalendar = new TavoCalendar('#my-calendar', {});
+
+      includeHTML();
+
+      document
+        .querySelector('#my-calendar')
+        .addEventListener('calendar-select', (ev) => {
+          alert(myCalendar.getSelected());
+        });
+
+      addActive(tablinks, toggleCalendar);
+
+      function toggleCalendar() {
+        const calendarBtn = document.querySelector('.calendar');
+        const calendar = document.querySelector('.calendar-wrap');
+
+        if ([...calendarBtn.classList].includes('active')) {
+          calendar.style.display = 'block';
+        } else {
+          calendar.style.display = 'none';
+        }
+      }
+    </script>
+    <script src="./mypage.js"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- 럭키포크_혈액형_하단광고 -->
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-client="ca-pub-"
+      data-ad-slot="2953481145"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </body>
+</html>

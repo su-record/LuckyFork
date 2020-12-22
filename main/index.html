@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+
+      <main layout="contents">
+        <section class="top-banner">
+          <h1>오늘의 운세를<br />직접 점쳐 보세요.</h1>
+          <p>
+            基地發動 必有口舌 (기지발동 필유구설)<br />
+            근거지가 발동하니, 반드시 구설(口舌)이 있다.<br />
+            卦逢勾陳 勿爲他營 (괘봉구진 물위타영)<br />
+            괘가 옛을 지키도록 나왔으니, 다른 경영을 하지 마라.
+          </p>
+        </section>
+        <article class="lucky-notice">
+          <p class="ellipsis line-02">
+            <span class="user">박준흥</span>님의 오늘의 행운 지수는 90점입니다.
+            오늘은 특히나 컨디션이 안 좋은 날로 모든 행동을 할 때 조심하셔야
+            합니다.
+          </p>
+          <a href="javascript:void(0)" class="anchor-more">
+            자세히 보러가기 <i></i>
+          </a>
+        </article>
+        <section class="section">
+          <h1 class="title">내 운명은 내 손 안에</h1>
+          <nav class="destiny-nav">
+            <a href="/tarot">
+              <img src="/static/images/main_tarot.png" alt="타로점 이미지" />
+              <p>
+                <span
+                  ><span class="highlight">타로점</span>으로 오늘의 운세
+                  뽑기</span
+                >
+                <i></i>
+              </p>
+            </a>
+            <a href="/bookOfChanges">
+              <img src="/static/images/main_destiny.png" alt="주역점 이미지" />
+              <p>
+                <span
+                  ><span class="highlight">주역점</span>으로 오늘의
+                  운세뽑기</span
+                >
+                <i></i>
+              </p>
+            </a>
+          </nav>
+          <div></div>
+        </section>
+        <section class="section">
+          <h1 class="title">답답한 나의 운세 열어주기</h1>
+          <p class="pray-desc">
+            운명은 정해진 것이 아니라 개척이 가능합니다.<br />
+            현재 모든 것이 막혀 있다고 답답해 하지 말고 개운(開運)하는 법 을
+            알아 봅시다. 당신에게 행운이 함께 하기를 바랍니다.
+          </p>
+
+          <nav>
+            <a href="javascript:void(0)">
+              <img src="/static/images/main_pray.png" alt="개운법 이미지" />
+            </a>
+            <a href="javascript:void(0)">
+              <img src="/static/images/main_pray.png" alt="개운법 이미지" />
+            </a>
+          </nav>
+        </section>
+        <section class="section">
+          <h1 class="title">럭키포크 이벤트</h1>
+          <ul class="accordion-wrap">
+            <li>
+              <button class="accordion">이벤트 1</button>
+              <div class="panel">
+                <p class="desc">
+                  럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                  준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                  blablablablablablablablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                </p>
+              </div>
+            </li>
+            <li>
+              <button class="accordion">이벤트 2</button>
+              <div class="panel">
+                <p class="desc">
+                  럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                  준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                  blablablablablablablablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                </p>
+              </div>
+            </li>
+            <li>
+              <button class="accordion">이벤트 2</button>
+              <div class="panel">
+                <p class="desc">
+                  럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                  준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                  blablablablablablablablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                  blablablablablablablablablablablabla blablablablablabla
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      const accordions = document.querySelectorAll('.accordion');
+
+      includeHTML();
+
+      accordion(accordions);
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

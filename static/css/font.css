@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'NotoSansCJKKR-DemiLight';
+  src: url(/static/font/NotoSansCJKkr-DemiLight.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansCJKKR-Medium';
+  src: url(/static/font/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansCJKKR-Regular';
+  src: url(/static/font/NotoSansCJKkr-Regular.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansCJKKR-Bold';
+  src: url(/static/font/NotoSansCJKkr-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(/static/font/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url(/static/font/Roboto-Medium.ttf);
+}

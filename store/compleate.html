@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./store.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+      <main layout="contents">
+        <section class="container complete-wrap">
+          <p class="desc">구매안내 설명~~</p>
+
+          <div class="point-wrap">
+            <span class="radio-button__label">
+              <span class="point">2,200</span>원
+              <i class="arrow"></i>
+              <span class="point">2,200</span>Point
+            </span>
+          </div>
+
+          <p class="selected-notice" style="display: block; margin-top: 0">
+            <span>홍길동</span>님은
+            <span class="selected-point point">2,200</span>원 복주머니를
+            구매하셨습니다.
+          </p>
+
+          <nav class="nav-complete">
+            <a href="/mypage">확인</a>
+          </nav>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./store.js"></script>
+  </body>
+</html>

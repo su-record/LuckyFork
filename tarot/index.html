@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./tarot.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual">
+          <p>질문을 생각하면서 신중하게 카드를 선택해 보세요.</p>
+        </div>
+
+        <section class="container">
+          <div class="btn-wrap swiper-container">
+            <div class="swiper-wrapper">
+              <button class="swiper-slide fortunes active" data-keyname="all">
+                총운
+              </button>
+              <button class="swiper-slide fortunes" data-keyname="job">
+                직업
+              </button>
+              <button class="swiper-slide fortunes" data-keyname="health">
+                건강
+              </button>
+            </div>
+          </div>
+
+          <div class="tarot-cards">
+            <ul class="card-list">
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+              <li class="card">
+                <img src="/static/images/tarot_card_cover.png" alt="타로카드" />
+              </li>
+            </ul>
+          </div>
+
+          <button class="selected-card" onclick="getCardInfo()">
+            선택완료
+          </button>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+
+      <section layout="popup" class="popup-container">
+        <div class="popup-contents">
+          <div class="equalizer">
+            <span class="eq1"></span>
+            <span class="eq2"></span>
+            <span class="eq3"></span>
+            <span class="eq4"></span>
+            <span class="eq5"></span>
+          </div>
+          <div class="popup-desc">
+            <p>
+              현재 <span>홍길도</span>님의 타로를<br />
+              뽑는 중입니다....
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./tarot.js"></script>
+    <script>
+      const fortunes = document.querySelectorAll('.fortunes');
+
+      includeHTML(cardSpread);
+
+      addActive(fortunes, fortunedate);
+      addActive(cards);
+
+      function fortunedate() {
+        const res = getKeyData(fortunes);
+
+        console.log('###', res);
+
+        cardSet();
+      }
+    </script>
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js';
+
+      // 20.11.28 수정
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        freeMode: true,
+      });
+    </script>
+  </body>
+</html>

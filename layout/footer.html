@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<nav class="footer-nav">
+  <a href="/main" class="btn-home">홈</a>
+  <a href="/cookie" class="btn-cookie">포춘쿠키</a>
+  <a href="/pray" class="btn-pray">개운법</a>
+  <a href="/setting" class="btn-setting">설정</a>
+</nav>
+
+<script>
+  const links = document.querySelectorAll('.footer-nav a');
+  const reg = /[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
+  let locationPath = window.location.pathname;
+
+  if (reg.test(locationPath)) {
+    locationPath = locationPath.replace(reg, '');
+  }
+
+  links.forEach((anchor) => {
+    if (anchor.href.indexOf(locationPath) >= 0) {
+      anchor.classList.add('active');
+    }
+  });
+</script>

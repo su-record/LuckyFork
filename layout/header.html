@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<div class="headline">
+  <div class="header-title">
+    <p>당신의 행운을 <span class="highlight">콕콕</span> 찍어주는</p>
+    <h1>LUCKY FORK</h1>
+  </div>
+
+  <div class="myinfo">
+    <p>당신의 정보를 입력하세요!</p>
+    <ul>
+      <li>
+        <span class="info">
+          <img src="/static/images/my_icon_dragon.png" alt="용" />
+        </span>
+        <span class="desc">띠</span>
+      </li>
+      <li>
+        <span class="info">
+          <img src="/static/images/my_icon_cancer.png" alt="게" />
+        </span>
+        <span class="desc">자리</span>
+      </li>
+      <li>
+        <span class="info blood">O</span>
+        <span class="desc">형</span>
+      </li>
+    </ul>
+    <a href="/mypage">내 정보 설정</a>
+  </div>
+</div>
+
+<nav class="header-nav">
+  <a href="/destiny">사주</a>
+  <a href="/compatibility">궁합</a>
+  <a href="/bookOfChanges">주역</a>
+  <!-- <a href="/fortune">토정비결</a> -->
+  <a href="/tarot">타로</a>
+  <a href="/constellation">별자리</a>
+  <a href="/bloodType">혈액형</a>
+</nav>
+
+<script>
+  const links = document.querySelectorAll('.header-nav a');
+  const reg = /[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
+  let locationPath = window.location.pathname;
+
+  if (reg.test(locationPath)) {
+    locationPath = locationPath.replace(reg, '');
+  }
+
+  if (locationPath.indexOf('mypage') >= 0) {
+    document.querySelector('.header-nav').style.display = 'none';
+    // document.querySelector('#score').innerText = '정보설정중';
+  }
+
+  if (locationPath.indexOf('destiny') >= 0) {
+    locationPath = 'destiny';
+  }
+
+  if (locationPath.indexOf('compatibility') >= 0) {
+    locationPath = 'compatibility';
+  }
+
+  if (locationPath.indexOf('tarot') >= 0) {
+    locationPath = 'tarot';
+  }
+
+  links.forEach((anchor) => {
+    if (anchor.href.indexOf(locationPath) >= 0) {
+      anchor.classList.add('active');
+    }
+  });
+</script>

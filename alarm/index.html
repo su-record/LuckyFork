@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./alarm.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+      <main layout="contents">
+        <section class="container">
+          <div class="alarm-wrap">
+            <ul class="accordion-list">
+              <li>
+                <button class="accordion">01월 홈 트레이닝 이벤트</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+              <li>
+                <button class="accordion">01월 홈 트레이닝 이벤트</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+              <li>
+                <button class="accordion">01월 홈 트레이닝 이벤트</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      const accordions = document.querySelectorAll('.accordion');
+      includeHTML();
+
+      accordion(accordions);
+    </script>
+    <script src="./alarm.js"></script>
+  </body>
+</html>

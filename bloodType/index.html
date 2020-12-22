@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./bloodType.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual"></div>
+
+        <section class="container">
+          <div class="select-type button-group">
+            <button class="type" data-keyname="femaleA">A형 여자</button>
+            <button class="type" data-keyname="maleA">A형 남자</button>
+            <button class="type" data-keyname="femaleB">B형 여자</button>
+            <button class="type" data-keyname="maleB">B형 남자</button>
+            <button class="type" data-keyname="femaleO">O형 여자</button>
+            <button class="type" data-keyname="maleO">O형 남자</button>
+            <button class="type" data-keyname="femaleAB">AB형 여자</button>
+            <button class="type" data-keyname="maleAB">AB형 남자</button>
+          </div>
+
+          <section class="blood-desc">
+            <article>
+              <h1><span class="blood-type">O형 여자</span>의 성격</h1>
+              <p class="type-desc">
+                O형은 삶에 대한 욕구가 매우 강하다. 일단 목적이 생기면 추진력이
+                대단하지만 목적이 모호해지면 바로 의욕을 상실해버린다. 집단을
+                형성하려는 습성이 있고, 자기 집단 이외에는 강한 경계심을 보인다.
+                한 가지 일에 집중하는 경향이 있어 전문직에 종사하는 사람들 중
+                O형이 많다. 솔직하고 자기 주장이 강하며 신념과 사상을 가지고
+                사는 사람이 많다. 감정적이지만 뒤끝은 없다.
+              </p>
+            </article>
+            <article>
+              <h1><span class="blood-type">O형 여자</span>의 성격</h1>
+              <p class="type-desc">
+                O형은 삶에 대한 욕구가 매우 강하다. 일단 목적이 생기면 추진력이
+                대단하지만 목적이 모호해지면 바로 의욕을 상실해버린다. 집단을
+                형성하려는 습성이 있고, 자기 집단 이외에는 강한 경계심을 보인다.
+                한 가지 일에 집중하는 경향이 있어 전문직에 종사하는 사람들 중
+                O형이 많다. 솔직하고 자기 주장이 강하며 신념과 사상을 가지고
+                사는 사람이 많다. 감정적이지만 뒤끝은 없다.
+              </p>
+            </article>
+            <article>
+              <h1><span class="blood-type">O형 여자</span>의 성격</h1>
+              <p class="type-desc">
+                O형은 삶에 대한 욕구가 매우 강하다. 일단 목적이 생기면 추진력이
+                대단하지만 목적이 모호해지면 바로 의욕을 상실해버린다. 집단을
+                형성하려는 습성이 있고, 자기 집단 이외에는 강한 경계심을 보인다.
+                한 가지 일에 집중하는 경향이 있어 전문직에 종사하는 사람들 중
+                O형이 많다. 솔직하고 자기 주장이 강하며 신념과 사상을 가지고
+                사는 사람이 많다. 감정적이지만 뒤끝은 없다.
+              </p>
+            </article>
+          </section>
+        </section>
+      </main>
+
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      const typeBtns = document.querySelectorAll('.type');
+      const bloodType = document.querySelectorAll('.blood-type');
+
+      includeHTML();
+
+      addActive(typeBtns, calldata);
+
+      function calldata() {
+        const res = getKeyData(typeBtns);
+
+        for (let i = 0; i < bloodType.length; i++) {
+          bloodType[i].innerText = res.text;
+        }
+      }
+    </script>
+  </body>
+</html>

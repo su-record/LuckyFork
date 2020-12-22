@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<h1 class="header-title header-backspace"></h1>
+
+<a href="javascript:void(0)" class="backspace"
+  ><img src="/static/images/icon_backspace.png" alt="뒤로가기"
+/></a>
+
+<script>
+  const locationPath = location.pathname;
+  const queryString = location.search;
+
+  if (locationPath.indexOf('serviceCenter') >= 0) {
+    document.querySelector('.header-title').innerText = '고객센터';
+  }
+
+  if (locationPath.indexOf('question') >= 0) {
+    document.querySelector('.header-title').innerText = '문의하기';
+  }
+
+  if (locationPath.indexOf('setting') >= 0) {
+    document.querySelector('.header-title').innerText = '설정';
+    document.querySelector('.backspace').style.display = 'none';
+  }
+
+  if (locationPath.indexOf('alarm') >= 0) {
+    document.querySelector('.header-title').innerText = '럭키포크 알림함';
+  }
+
+  if (locationPath.indexOf('store') >= 0) {
+    document.querySelector('.header-title').innerText = '포인트 구매하기';
+  }
+
+  if (locationPath.indexOf('compleate') >= 0) {
+    document.querySelector('.header-title').innerText = '포인트 구매 완료';
+  }
+
+  if (locationPath.indexOf('signin') >= 0) {
+    document.querySelector('.header-title').innerText = '회원 가입';
+  }
+
+  if (locationPath.indexOf('regist') >= 0) {
+    document.querySelector('.header-title').innerText = '회원 정보';
+  }
+
+  if (locationPath.indexOf('event') >= 0) {
+    document.querySelector('.header-title').innerText = '럭키포크 이벤트';
+  }
+
+  if (locationPath.indexOf('history') >= 0) {
+    if (queryString) {
+      const urlParams = new URLSearchParams(queryString);
+      if (urlParams.get('type') === 'buy') {
+        document.querySelector('.header-title').innerText = '구매 히스토리';
+      } else if (urlParams.get('type') === 'charge') {
+        document.querySelector('.header-title').innerText = '충전 히스토리';
+      }
+    }
+  }
+
+  if (locationPath.indexOf('store') >= 0) {
+    if (queryString) {
+      const urlParams = new URLSearchParams(queryString);
+      if (urlParams.get('type') === 'buy') {
+        document.querySelector('.header-title').innerText = '포인트 구매하기';
+      } else if (urlParams.get('type') === 'charge') {
+        document.querySelector('.header-title').innerText = '포인트 충전하기';
+      }
+    }
+  }
+
+  document.querySelector('.backspace').addEventListener('click', function () {
+    if (document.referrer) {
+      history.back();
+    } else {
+      location.href = '/main';
+    }
+  });
+</script>

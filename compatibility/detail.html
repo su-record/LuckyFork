@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./compatibility.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual">
+          <h1>四柱</h1>
+          <p>
+            이화(梨花)에 월백(月白)하고 은한(銀漢)<br />
+            이 삼경(三更)인 제 일지춘심(一枝春心)을 자규(子規) 야
+            알랴마난 다정(多情)도 병(病)인
+          </p>
+        </div>
+
+        <section class="container explanation">
+          <h1><span class="birth-belt cow"></span>나는 무엇으로 태어났을까?</h1>
+
+          <dl class="desc-wrap">
+            <dt>물 타입으로 시냇물, 그릇에 담긴 물을 의미 합니다.</dt>
+            <dd>
+              사주팔자를 볼 때 가장 중요한 것은 “나”입니다.<br />
+              사주를 보러 갔을 때 큰 바다로 태어났네 혹은 반짝반짝 보 석으로
+              태어났네 등으로 빗대어 말 하는 것은 바로 나의 사 주팔자에 있는
+              대표 오행을 보고 나를 정의하기 때문입니다.
+            </dd>
+            <dd>
+              오행은 우주 만물을 이루는 목(木) 화(火) 토(土) 금(金) 수 (水) 다섯
+              가지의 원소를 말하며 각각 음(-)과 양(+)으로 나 누어 10가지
+              타입으로 풀이합니다.
+            </dd>
+            <dd>
+              내가 어떤 오행으로 태어났는지에 대한 정의가 이루어진 후 에
+              사주팔자의 풀이가 시작되는 만큼 그 오행은 나를 뜻하는 중요한
+              시작점이 됩니다. 나 혹은 나의 주변 사람은 어떤 오 행인지 그 특징은
+              무엇인지 살펴보시기 바랍니다.
+            </dd>
+          </dl>
+        </section>
+
+        <section
+          layout="social"
+          include-html="/layout/promotion.html"
+        ></section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./compatibility.js"></script>
+  </body>
+</html>

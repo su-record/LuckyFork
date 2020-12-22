@@ -1,0 +1,233 @@
+@charset "utf-8";
+.visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 290px;
+  padding: 0 75px 25px 0;
+  background-image: url(/static/images/destiny_visual.png);
+}
+
+.visual h1 {
+  margin-right: 3px;
+  margin-bottom: 15px;
+  font-size: 46px;
+  color: #737941;
+}
+
+.visual p {
+  width: 303px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.container,
+.result-contents {
+  margin-top: 45px;
+}
+
+.result-contents {
+  margin-bottom: 115px;
+}
+
+.user-destiny {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.user-destiny,
+.user-destiny span {
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  color: #222;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.btn-wrap button {
+  width: 333px;
+  height: 64px;
+  font-family: 'NotoSansCJKKR-Medium' !important;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #f45721;
+  border: 2px solid #f45721;
+  border-radius: 32px;
+}
+
+.btn-wrap i {
+  display: inline-block;
+  width: 11px;
+  height: 21px;
+  margin-left: 12px;
+  vertical-align: -2px;
+  background-image: url(/static/images/icon_more_orange.png);
+}
+
+.form-wrap {
+  margin-bottom: 60px;
+}
+
+.middle {
+  width: 202px;
+}
+
+.small {
+  width: 152px;
+}
+
+.form-wrap [type='submit'] {
+  width: 252px;
+  height: 72px;
+  margin-left: 12px;
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  background-color: #f45721;
+  border-radius: 36px;
+}
+
+.result-wrap {
+  margin-bottom: 60px;
+}
+
+.result-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result-card > div {
+  margin-right: 2px;
+}
+
+.pink-line span {
+  background-color: #ffdddd;
+}
+
+.green-line span {
+  background-color: #d9f9d9;
+}
+
+.grey-line span {
+  background-color: #dfdcdc;
+}
+
+.yellow-line span {
+  background-color: #fff5d0;
+}
+
+.result-card > div > span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-top: 2px;
+  font-size: 64px;
+  text-align: center;
+  color: #222;
+  line-height: 120px;
+}
+
+.result-card > div > span:first-child {
+  margin-top: 0;
+}
+
+.result-card p {
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #222;
+}
+
+.result-card p span {
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  font-size: 24px;
+  line-height: 30px;
+  color: #222;
+}
+
+.article {
+  position: relative;
+  padding: 40px 27px;
+  background-color: #f5f5f5;
+  border-radius: 7px;
+}
+
+.article h1,
+.article h1 span {
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 36px;
+  color: #222;
+}
+
+.article h1 {
+  margin-bottom: 30px;
+}
+
+.article p {
+  width: 480px;
+  min-height: 70px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  line-height: 40px;
+  word-break: keep-all;
+  letter-spacing: -0.05em;
+}
+
+.user-desc .birth-belt {
+  position: absolute;
+  top: 35px;
+  right: 33px;
+}
+
+.partner-desc {
+  display: none;
+  margin-top: 60px;
+}
+
+.compatibility .user-desc {
+  display: none;
+}
+
+.compatibility .result-wrap .partner-desc {
+  display: flex;
+}
+
+.compatibility .article.partner-desc {
+  display: block;
+}
+
+.compatibility .article h1 {
+  text-align: center;
+}
+
+.compatibility .birth-belt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.compatibility .icon_heart {
+  display: block;
+  width: 68px;
+  height: 59px;
+  margin: 0 35px;
+  background-image: url(/static/images/icon_heart.png);
+}
+
+.compatibility .article p {
+  text-align: center;
+}

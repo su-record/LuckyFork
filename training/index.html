@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./training.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <section class="container">
+          <div class="content-title">
+            <h1>나리쌤과 함께하는 재미있는 필라테스</h1>
+            <p>매달 새로운 운동이 추가됩니다.</p>
+          </div>
+
+          <ul class="training-list">
+            <li class="training">
+              <img src="/static/images/training.jpg" alt="트레이닝 이미지" />
+              <span class="name">트레이닝 이름</span>
+            </li>
+            <li class="training">
+              <img src="/static/images/training.jpg" alt="트레이닝 이미지" />
+              <span class="name">트레이닝 이름</span>
+            </li>
+            <li class="training">
+              <img src="/static/images/training.jpg" alt="트레이닝 이미지" />
+              <span class="name">트레이닝 이름</span>
+            </li>
+            <li class="training">
+              <img src="/static/images/training.jpg" alt="트레이닝 이미지" />
+              <span class="name">트레이닝 이름</span>
+            </li>
+            <li class="training">
+              <img src="/static/images/training.jpg" alt="트레이닝 이미지" />
+              <span class="name">트레이닝 이름</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./training.js"></script>
+  </body>
+</html>

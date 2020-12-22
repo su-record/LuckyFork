@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./constellation.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual">
+          <div class="tabs">
+            <button class="categorys active" data-keyname="lucky">행운</button>
+            <button class="categorys" data-keyname="money">금전</button>
+            <button class="categorys" data-keyname="love">연애</button>
+          </div>
+        </div>
+
+        <section class="container">
+          <div class="btn-wrap">
+            <button class="fortunes active" data-keyname="today">
+              오늘의운세
+            </button>
+            <button class="fortunes" data-keyname="week">주간운세</button>
+            <button class="fortunes" data-keyname="month">월간운세</button>
+          </div>
+
+          <section class="constellation-desc">
+            <ul class="chart">
+              <li class="health">
+                <span class="title">건강</span>
+                <span class="progress">
+                  <span class="bar" style="width: 57%;"></span>
+                </span>
+                <span class="percent">57%</span>
+              </li>
+              <li class="affection">
+                <span class="title">애정</span>
+                <span class="progress">
+                  <span class="bar" style="width: 56%;"></span>
+                </span>
+                <span class="percent">56%</span>
+              </li>
+              <li class="job">
+                <span class="title">직업</span>
+                <span class="progress">
+                  <span class="bar" style="width: 82%;"></span>
+                </span>
+                <span class="percent">82%</span>
+              </li>
+            </ul>
+
+            <article class="border-none">
+              <h1><span class="constellation-type">O</span>의 성격</h1>
+              <p class="type-desc">
+                O형은 삶에 대한 욕구가 매우 강하다. 일단 목적이 생기면 추진력이
+                대단하지만 목적이 모호해지면 바로 의욕을 상실해버린다. 집단을
+                형성하려는 습성이 있고, 자기 집단 이외에는 강한 경계심을 보인다.
+                한 가지 일에 집중하는 경향이 있어 전문직에 종사하는 사람들 중
+                O형이 많다. 솔직하고 자기 주장이 강하며 신념과 사상을 가지고
+                사는 사람이 많다. 감정적이지만 뒤끝은 없다.
+              </p>
+            </article>
+            <article>
+              <h1><span class="constellation-type">O</span>의 성격</h1>
+              <p class="type-desc">
+                O형은 삶에 대한 욕구가 매우 강하다. 일단 목적이 생기면 추진력이
+                대단하지만 목적이 모호해지면 바로 의욕을 상실해버린다. 집단을
+                형성하려는 습성이 있고, 자기 집단 이외에는 강한 경계심을 보인다.
+                한 가지 일에 집중하는 경향이 있어 전문직에 종사하는 사람들 중
+                O형이 많다. 솔직하고 자기 주장이 강하며 신념과 사상을 가지고
+                사는 사람이 많다. 감정적이지만 뒤끝은 없다.
+              </p>
+            </article>
+            <article>
+              <h1><span class="constellation-type">O</span>의 성격</h1>
+              <p class="type-desc">
+                O형은 삶에 대한 욕구가 매우 강하다. 일단 목적이 생기면 추진력이
+                대단하지만 목적이 모호해지면 바로 의욕을 상실해버린다. 집단을
+                형성하려는 습성이 있고, 자기 집단 이외에는 강한 경계심을 보인다.
+                한 가지 일에 집중하는 경향이 있어 전문직에 종사하는 사람들 중
+                O형이 많다. 솔직하고 자기 주장이 강하며 신념과 사상을 가지고
+                사는 사람이 많다. 감정적이지만 뒤끝은 없다.
+              </p>
+            </article>
+          </section>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+
+      <section
+        layout="popup"
+        class="popup-container active"
+        style="display: flex"
+      >
+        <div class="popup-content">
+          <h1>별자리를 선택해주세요</h1>
+          <nav class="nav-constellation">
+            <a href="javascript:void(0)" data-keyname="aquarius">
+              <span class="img-wrap">
+                <img src="/static/images/icon_aquarius.png" alt="물병자리 아이콘">
+              </span>
+              <span class="constellation-name">물병자리</span>
+              <span class="constellation-date">1월20일 ~ 2월18일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="pisces">
+              <span class="img-wrap">
+                <img src="/static/images/icon_pisces.png" alt="물고기자리 아이콘">
+              </span>
+              <span class="constellation-name">물고기자리</span>
+              <span class="constellation-date">2월19일 ~ 3월20일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="aries">
+              <span class="img-wrap">
+                <img src="/static/images/icon_aries.png" alt="양자리 아이콘">
+              </span>
+              <span class="constellation-name">양자리</span>
+              <span class="constellation-date">3월21일 ~ 4월19일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="taurus">
+              <span class="img-wrap">
+                <img src="/static/images/icon_taurus.png" alt="황소자리 아이콘">
+              </span>
+              <span class="constellation-name">황소자리</span>
+              <span class="constellation-date">4월20일 ~ 5월20일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="gemini">
+              <span class="img-wrap">
+                <img src="/static/images/icon_gemini.png" alt="쌍둥이자리 아이콘">
+              </span>
+              <span class="constellation-name">쌍둥이자리</span>
+              <span class="constellation-date">5월22일 ~ 6월21일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="cancer">
+              <span class="img-wrap">
+                <img src="/static/images/icon_cancer.png" alt="게자리 아이콘">
+              </span>
+              <span class="constellation-name">게자리</span>
+              <span class="constellation-date">6월22일 ~ 7월 22일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="leo">
+              <span class="img-wrap">
+                <img src="/static/images/icon_leo.png" alt="사자자리 아이콘">
+              </span>
+              <span class="constellation-name">사자자리</span>
+              <span class="constellation-date">7월23일 ~ 8월22일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="virgo">
+              <span class="img-wrap">
+                <img src="/static/images/icon_virgo.png" alt="처녀자리 아이콘">
+              </span>
+              <span class="constellation-name">처녀자리</span>
+              <span class="constellation-date">8월23일 ~ 9월23일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="libra">
+              <span class="img-wrap">
+                <img src="/static/images/icon_libra.png" alt="천칭자리 아이콘">
+              </span>
+              <span class="constellation-name">천칭자리</span>
+              <span class="constellation-date">9월24일 ~ 10월22일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="scorpio">
+              <span class="img-wrap">
+                <img src="/static/images/icon_scorpio.png" alt="전갈자리 아이콘">
+              </span>
+              <span class="constellation-name">전갈자리</span>
+              <span class="constellation-date">10월23일 ~ 11월22일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="sagittarius">
+              <span class="img-wrap">
+                <img src="/static/images/icon_sagittarius.png" alt="사수자리 아이콘">
+              </span>
+              <span class="constellation-name">사수자리</span>
+              <span class="constellation-date">11월23일 ~ 12월24일</span>
+            </a>
+            <a href="javascript:void(0)" data-keyname="capricorn">
+              <span class="img-wrap">
+                <img src="/static/images/icon_capricorn.png" alt="염소자리 아이콘">
+              </span>
+              <span class="constellation-name">염소자리</span>
+              <span class="constellation-date">12월25일 ~ 1월9일</span>
+            </a>
+          </nav>
+          <button class="popup-close">
+            <img src="/static/images/icon_close.png" alt="닫기">
+          </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const categorys = document.querySelectorAll('.categorys');
+      const fortunes = document.querySelectorAll('.fortunes');
+      const constellationBtns = document.querySelectorAll('.nav-constellation a');
+      const constellationType = document.querySelectorAll('.constellation-type');
+
+      includeHTML();
+
+      addActive(categorys, categorydata);
+
+      function categorydata() {
+        const res = getKeyData(constellationBtns);
+
+        console.log('###', res);
+      }
+
+      addActive(fortunes, datedate);
+
+      function datedate() {
+        const res = getKeyData(constellationBtns);
+
+        console.log('###', res);
+      }
+
+      addActive(constellationBtns, constellationdata);
+
+      function constellationdata() {
+        const res = getKeyData(constellationBtns);
+
+        console.log('###', res);
+
+        setTimeout(() => {
+          for (let i = 0; i < constellationType.length; i++) {
+            constellationType[i].innerText = res.text.trim().split('\n')[0];
+          }
+
+          popupClose();
+        }, 1000);
+      }
+
+      function popupClose() {
+        const popup = document.querySelector('.popup-container');
+
+        popup.classList.remove('active');
+
+        setTimeout(() => {
+          popup.style.cssText = 'display: none;';
+        }, 300);
+      }
+    </script>
+  </body>
+</html>

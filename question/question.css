@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* form */
+.container {
+  padding-top: 60px;
+}
+
+.form-style label {
+  margin-bottom: 15px;
+  color: #999;
+}
+
+.form-style [type='text'],
+.form-style textarea {
+  padding: 25px;
+}
+
+.form-style [type='button'] {
+  border: 1px solid #999;
+  background: #999;
+}
+
+.form-style .input-wrap.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.form-style [type='button'],
+.form-style [type='submit'] {
+  width: 333px;
+  height: 100px;
+  font-family: 'NotoSansCJKKR-Medium' !important;
+  font-size: 32px;
+  border-radius: 50px;
+}
+
+.form-style [type='submit'] {
+  background-color: #f45721;
+}
+
+.form-style textarea {
+  min-height: 534px;
+}

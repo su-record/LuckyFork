@@ -1,0 +1,268 @@
+@charset "utf-8";
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 390px;
+  background-image: url(/static/images/constellation_visual.png);
+}
+
+.visual .tabs {
+  margin-bottom: 25px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.visual .categorys {
+  width: 215px;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  line-height: 72px;
+  text-align: center;
+  color: #999;
+  border-radius: 10px;
+}
+
+.visual .categorys.active {
+  color: #fff;
+  background-color: #eda557;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.btn-wrap button {
+  width: 222px;
+  height: 72px;
+  font-family: 'NotoSansCJKKR-Bold' !important;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #ccc;
+  border: 3px solid #ccc;
+  border-radius: 36px;
+}
+
+.btn-wrap button.active {
+  color: #eda557;
+  border-color: #eda557;
+}
+
+.constellation-desc {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.constellation-desc .chart {
+  margin-bottom: 80px;
+  padding: 0 50px;
+}
+
+.chart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  margin-top: 35px;
+  font-size: 28px;
+}
+
+.chart li:first-child {
+  margin-top: 0;
+}
+
+.chart .progress:before,
+.chart .bar {
+  display: block;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+  border-radius: 8px;
+}
+
+.chart .progress:before {
+  content: '';
+  width: 420px;
+  position: absolute;
+  z-index: -1;
+}
+
+.chart .health .title,
+.chart .health .percent {
+  color: #5ec183;
+}
+
+.chart .progress {
+  display: block;
+  width: 420px;
+  position: relative;
+}
+
+.chart .health .progress:before {
+  border-color: #daf5e4;
+}
+
+.chart .health .bar {
+  border-color: #5ec183;
+}
+
+.chart .progress {
+  display: block;
+  width: 420px;
+  position: relative;
+}
+
+.chart .affection .title,
+.chart .affection .percent {
+  color: #df8ef1;
+}
+
+.chart .affection .progress:before {
+  border-color: #f5e4f9;
+}
+
+.chart .affection .bar {
+  border-color: #df8ef1;
+}
+
+.chart .job .title,
+.chart .job .percent {
+  color: #f0c763;
+}
+
+.chart .progress {
+  display: block;
+  width: 420px;
+  position: relative;
+}
+
+.chart .job .progress:before {
+  border-color: #fdefcd;
+}
+
+.chart .job .bar {
+  border-color: #f0c763;
+}
+
+.constellation-desc article {
+  padding: 50px 0;
+  border-top: 2px solid #ededed;
+}
+
+.constellation-desc article.border-none {
+  padding-top: 0;
+  border-top: 0 none;
+}
+
+.constellation-desc h1,
+.constellation-desc .constellation-type {
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 36px;
+  letter-spacing: -0.05em;
+  color: #222;
+}
+
+.constellation-desc h1 {
+  margin-bottom: 30px;
+}
+
+.constellation-desc h1:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 18px;
+  vertical-align: -3px;
+  background-image: url(/static/images/icon_star.png);
+}
+
+.type-desc {
+  letter-spacing: -0.05em;
+  line-height: 1.4;
+}
+
+.popup-container {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.popup-content {
+  padding: 40px;
+  position: relative;
+  top: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #fff;
+  transition: top 0.3s ease;
+}
+
+.popup-container.active .popup-content {
+  top: 0;
+}
+
+.popup-content h1 {
+  margin-bottom: 30px;
+  font-family: 'NotoSansKR-Medium';
+  font-size: 40px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  line-height: 3;
+}
+
+.popup-content .popup-close {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.nav-constellation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nav-constellation a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 313px;
+  height: 86px;
+  margin-bottom: 46px;
+}
+
+.nav-constellation .img-wrap {
+  display: inline-block;
+  width: 86px;
+  height: 86px;
+  margin-right: 5px;
+}
+
+.nav-constellation .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-constellation .constellation-name,
+.nav-constellation .constellation-date {
+  width: calc(100% - 100px);
+}
+
+.nav-constellation .constellation-name {
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  color: #222;
+}
+
+.nav-constellation .constellation-date {
+  margin-top: 10px;
+  font-size: 24px;
+  letter-spacing: -0.025em;
+}

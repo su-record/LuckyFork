@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./bookOfChanges.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual"></div>
+
+        <section class="container">
+          <div class="btn-wrap">
+            <button class="tabs active">오늘의 운세</button>
+            <button class="tabs">특정일의 운세</button>
+          </div>
+
+          <div class="rules-wrap">
+            <div class="rules-view now">
+              <div class="rule-area">
+                <div>
+                  <span class="line-01"></span>
+                  <span class="line-02"></span>
+                  <span class="line-03"></span>
+                </div>
+
+                <div>
+                  <span class="line-04"></span>
+                  <span class="line-05"></span>
+                  <span class="line-06"></span>
+                </div>
+              </div>
+              <p>현재 상태의 운</p>
+            </div>
+
+            <!-- <div class="rules-view future">
+              <div class="rule-area">
+                <div>
+                  <span class="line-01"></span>
+                  <span class="line-02"></span>
+                  <span class="line-03"></span>
+                </div>
+
+                <div>
+                  <span class="line-01"></span>
+                  <span class="line-02"></span>
+                  <span class="line-03"></span>
+                </div>
+              </div>
+              <p>다가올 미래의 운</p>
+            </div> -->
+          </div>
+
+          <button class="rule-change" onclick="getRules()">괘 뽑기!</button>
+        </section>
+
+        <article class="container article">
+          <p class="desc">내용 여기에</p>
+        </article>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+
+      <section layout="popup" class="popup-container">
+        <div class="popup-contents">
+          <div class="equalizer">
+            <span class="eq1"></span>
+            <span class="eq2"></span>
+            <span class="eq3"></span>
+            <span class="eq4"></span>
+            <span class="eq5"></span>
+          </div>
+          <div class="popup-desc">
+            <p>
+              현재 <span>홍길동</span>님의 괘를<br />
+              뽑는 중입니다...
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll('.tabs');
+
+      includeHTML();
+
+      addActive(tabs, tabAction);
+
+      function tabAction() {
+        console.log('### tabAction');
+      }
+    </script>
+    <script src="./bookOfChanges.js"></script>
+  </body>
+</html>

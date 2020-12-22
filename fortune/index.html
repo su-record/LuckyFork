@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./fortune.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual"></div>
+
+        <section class="container">
+          <p class="user-destiny">
+            <span>홍길동</span>(<span>1980년05월10일</span>)님의 풀이입니다.
+          </p>
+
+          <div class="btn-wrap">
+            <button>다른 생일의 토정비결보기 <i></i></button>
+          </div>
+
+          <div class="form-wrap">
+            <form class="form-style">
+              <div class="flex-type">
+                <select name="year" id="year" class="large">
+                  <option selected disabled>생년</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                </select>
+
+                <select name="month" id="month">
+                  <option selected disabled>월</option>
+                  <option value="jan">1월</option>
+                  <option value="feb">2월</option>
+                </select>
+
+                <select name="day" id="day">
+                  <option selected disabled>일</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+
+                <select name="lns" id="lns">
+                  <option selected disabled>음/양력</option>
+                  <option value="lunar">음력</option>
+                  <option value="solar">양력</option>
+                </select>
+
+                <select name="gender" id="gender">
+                  <option selected disabled>남/녀</option>
+                  <option value="male">남성</option>
+                  <option value="female">여성</option>
+                </select>
+
+                <div class="input-wrap">
+                  <input type="checkbox" id="save" />
+                  <label for="save">현재 데이터 저장하기</label>
+                </div>
+              </div>
+
+              <div class="submit-wrap">
+                <input type="submit" value="조회" />
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="container result-contents">
+          <article class="article">
+            <h1>총운</h1>
+
+            <p>총운 내용~</p>
+          </article>
+
+          <article class="article">
+            <h1>월운</h1>
+
+            <p>월운 내용~</p>
+          </article>
+        </section>
+      </main>
+      <footer include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

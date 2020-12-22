@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./signin.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body class="start">
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+      <main layout="contents">
+        <section class="container">
+          <ul class="sign-wrap">
+            <li class="kakao">
+              <button data-keyname="kakao" onclick="login(this)">
+                <i></i>카카오톡으로 로그인
+              </button>
+            </li>
+            <li class="facebook">
+              <button data-keyname="facebook" onclick="login(this)">
+                <i></i>페이스북으로 로그인
+              </button>
+            </li>
+            <li class="google">
+              <button data-keyname="google" onclick="login(this)">
+                <i></i>구글계정으로 로그인
+              </button>
+            </li>
+            <li class="naver">
+              <button data-keyname="naver" onclick="login(this)">
+                <i></i>네이버로 로그인
+              </button>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+
+      <section layout="popup" class="popup-container">
+        <div class="popup-contents">
+          <div class="popup-header">
+            <h1>약관동의</h1>
+            <p>회원가입을 위해 필수 약관에 동의해주세요.</p>
+          </div>
+
+          <form id="formData" class="form-style">
+            <div class="form-checkbox">
+              <div class="input-wrap">
+                <input type="checkbox" id="terms" />
+                <label for="terms">이용약관</label>
+                <a href="javascript:void(0)">보기</a>
+              </div>
+              <div class="input-wrap">
+                <input type="checkbox" id="agree" />
+                <label for="agree">개인정보 수집ㆍ이용 동의서</label>
+                <a href="javascript:void(0)">보기</a>
+              </div>
+              <div class="input-wrap">
+                <input type="checkbox" id="age" />
+                <label for="age">만 14세 이상 확인</label>
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="모두 동의하고 가입하기" />
+              <input type="button" value="취소" onclick="popupClose()" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script src="./signin.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

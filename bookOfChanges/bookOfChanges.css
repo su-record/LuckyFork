@@ -1,0 +1,343 @@
+@charset "utf-8";
+.visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 280px;
+  background-image: url(/static/images/fortune_visual.png);
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.btn-wrap button {
+  width: 333px;
+  height: 72px;
+  font-family: 'NotoSansCJKKR-Bold' !important;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #ccc;
+  border: 3px solid #ccc;
+  border-radius: 36px;
+}
+
+.btn-wrap button.active {
+  color: #cf3a47;
+  border-color: #cf3a47;
+}
+
+.container {
+  padding-top: 45px;
+}
+
+.rules-wrap {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-around;
+}
+
+.rules-view {
+  width: 240px;
+  text-align: center;
+}
+
+.rule-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 4px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+.rule-area div {
+  flex: 1;
+}
+
+.rule-area span {
+  display: block;
+  height: 40px;
+  margin-top: 1px;
+  position: relative;
+}
+
+.rules-view.now p,
+.rules-view.future p {
+  font-family: 'NotoSansCJKKR-Medium' !important;
+  letter-spacing: -0.05em;
+}
+
+.rules-view.now p {
+  color: #1661d3;
+}
+
+.rules-view.future p {
+  color: #d9173c;
+}
+
+/* .rule-open span {
+  background-color: #000;
+} */
+
+.line-01.rule-0,
+.line-01.rule-1,
+.line-02.rule-0,
+.line-02.rule-1,
+.line-03.rule-0,
+.line-03.rule-1,
+.line-04.rule-0,
+.line-04.rule-1,
+.line-05.rule-0,
+.line-05.rule-1,
+.line-06.rule-0,
+.line-06.rule-1 {
+  background-color: #000;
+}
+
+.line-01.rule-1:after,
+.line-02.rule-1:after,
+.line-03.rule-1:after,
+.line-04.rule-1:after,
+.line-05.rule-1:after,
+.line-06.rule-1:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 40px;
+  margin-left: -10px;
+  position: absolute;
+  left: 50%;
+  background-color: #fff;
+}
+
+/* .rule-011 .line-03:after,
+.rule-010 .line-01:after,
+.rule-010 .line-03:after,
+.rule-001 .line-02:after,
+.rule-001 .line-03:after,
+.rule-000 .line-01:after,
+.rule-000 .line-02:after,
+.rule-000 .line-03:after,
+.rule-100 .line-01:after,
+.rule-100 .line-02:after,
+.rule-101 .line-02:after,
+.rule-110 .line-01:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 40px;
+  margin-left: -10px;
+  position: absolute;
+  left: 50%;
+  background-color: #fff;
+} */
+
+.rule-change {
+  display: block;
+  width: 100%;
+  height: 90px;
+  margin: 60px 0 65px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: #fff;
+  background-color: #cf3a47;
+  border-radius: 45px;
+}
+
+.article {
+  display: none;
+  margin-bottom: 98px;
+  padding: 40px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.article:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: -14px;
+  background: url(/static/images/bg_boc_content_top.png) no-repeat left top;
+}
+
+.article:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  background: url(/static/images/bg_boc_content_bottom.png) no-repeat left
+    bottom;
+}
+
+.article .desc {
+  letter-spacing: -0.05em;
+  line-height: 40px;
+}
+
+.popup-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup-container.active {
+  opacity: 1;
+}
+
+.popup-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equalizer {
+  width: 66px;
+  height: 32px;
+  margin-bottom: 50px;
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  transition: opacity 0.5s ease;
+}
+
+.equalizer:hover,
+.equalizer:focus {
+  outline: 0;
+  opacity: 0.5;
+}
+
+.equalizer span {
+  display: inline-block;
+  width: 10px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes shorteq {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 32px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+@-webkit-keyframes shorteq {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 32px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.eq1 {
+  height: 32px;
+  left: 0;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+.eq2 {
+  height: 27px;
+  left: 14px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.17s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.17s;
+}
+
+.eq3 {
+  height: 22px;
+  left: 28px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.34s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.34s;
+}
+
+.eq4 {
+  height: 17px;
+  left: 42px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.17s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.51s;
+}
+
+.eq5 {
+  height: 12px;
+  left: 56px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.34s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.67s;
+}
+
+.popup-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  padding-bottom: 65px;
+  background-image: url(/static/images/boc_popup_desc.png);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.popup-desc p,
+.popup-desc span {
+  font-family: 'NotoSansCJKKR-Medium' !important;
+  letter-spacing: -0.05em;
+  line-height: 40px;
+  color: #222;
+  text-align: center;
+}

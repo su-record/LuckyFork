@@ -1,0 +1,342 @@
+@charset "utf-8";
+.visual {
+  height: 280px;
+  position: relative;
+  background: #1b0330 url(/static/images/tarot_visual.png) no-repeat center;
+}
+
+.visual p {
+  width: 175px;
+  position: absolute;
+  top: 95px;
+  left: 396px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  line-height: 32px;
+  color: #b9a0ce;
+}
+
+.container {
+  padding-bottom: 80px;
+  position: relative;
+  background-color: #1b0330;
+}
+
+.btn-wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* 20.11.28 수정 */
+.btn-wrap button {
+  width: 195px;
+  height: 72px;
+  font-family: 'NotoSansCJKKR-Bold' !important;
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #3f205a;
+  border: 3px solid #3f205a;
+  border-radius: 36px;
+}
+/* end */
+
+.btn-wrap button.active {
+  color: #a46de2;
+  border-color: #a46de2;
+}
+
+.tarot-cards {
+  width: 672px;
+  margin: 0 auto 60px;
+}
+
+.tarot-cards .card-list {
+  height: 692px;
+  position: relative;
+}
+
+.tarot-cards .card {
+  width: 95px;
+  height: 158px;
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tarot-cards .card.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #a46de2;
+  border-radius: 5px;
+}
+
+.selected-card {
+  display: block;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  font-family: 'NotoSansCJKKR-Medium' !important;
+  font-size: 36px;
+  letter-spacing: -0.05em;
+  color: #1b0330;
+  background-color: #a46de2;
+  border-radius: 45px;
+}
+
+.popup-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup-container.active {
+  opacity: 1;
+}
+
+.popup-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equalizer {
+  width: 66px;
+  height: 32px;
+  margin-bottom: 50px;
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  transition: opacity 0.5s ease;
+}
+
+.equalizer:hover,
+.equalizer:focus {
+  outline: 0;
+  opacity: 0.5;
+}
+
+.equalizer span {
+  display: inline-block;
+  width: 10px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes shorteq {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 32px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+@-webkit-keyframes shorteq {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 32px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.eq1 {
+  height: 32px;
+  left: 0;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+.eq2 {
+  height: 27px;
+  left: 14px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.17s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.17s;
+}
+
+.eq3 {
+  height: 22px;
+  left: 28px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.34s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.34s;
+}
+
+.eq4 {
+  height: 17px;
+  left: 42px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.17s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.51s;
+}
+
+.eq5 {
+  height: 12px;
+  left: 56px;
+  animation-name: shorteq;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.34s;
+  -webkit-animation-name: shorteq;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0.67s;
+}
+
+.popup-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  padding-bottom: 65px;
+  background-image: url(/static/images/tarot_popup_desc.png);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.popup-desc p,
+.popup-desc span {
+  font-family: 'NotoSansCJKKR-Medium' !important;
+  letter-spacing: -0.05em;
+  line-height: 40px;
+  color: #222;
+  text-align: center;
+}
+
+.complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 45px 0 70px;
+  position: relative;
+  background: url(/static/images/tarot_complete.png) no-repeat center 160px;
+}
+
+.complete:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #1b0330;
+}
+
+.complete .tarot-card {
+  margin-bottom: 73px;
+}
+
+.complete .card-name {
+  font-family: 'NotoSansCJKKR-Medium', sans-serif !important;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.complete .result-desc {
+  width: 692px;
+  margin: 130px 0;
+  padding: 0 54px 0 62px;
+  position: relative;
+  text-align: center;
+  background-image: url(/static/images/tarot_complete_result_middle.png);
+  background-size: 100% 100%;
+}
+
+.complete .result-desc:before {
+  content: '';
+  display: block;
+  width: 692px;
+  height: 130px;
+  position: absolute;
+  top: -130px;
+  left: 0;
+  background-image: url(/static/images/tarot_complete_result_top.png);
+}
+
+.complete .result-desc:after {
+  content: '';
+  display: block;
+  width: 692px;
+  height: 130px;
+  position: absolute;
+  bottom: -129px;
+  left: 0;
+  background-image: url(/static/images/tarot_complete_result_bottom.png);
+}
+
+.complete .result-desc h1 {
+  margin-bottom: 50px;
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  font-size: 36px;
+  letter-spacing: -0.05em;
+}
+
+.complete .result-desc p {
+  margin-bottom: 60px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 28px;
+  letter-spacing: -0.055em;
+  line-height: 40px;
+  text-align: left;
+  color: #222;
+}
+
+.complete .result-desc a {
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  line-height: 40px;
+  color: #222;
+  border-bottom: 2px solid #5c5546;
+}
+
+.complete .result-desc i {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  margin-left: 16px;
+  background-image: url(/static/images/icon_right_arrow_short.png);
+}

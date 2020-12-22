@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./cookie.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main id="main" layout="contents">
+        <div class="visual">
+          <p><span class="bg-cookie">포춘 쿠키</span>도 열어보고</p>
+          <p><span class="bg-point">오늘의 포인트</span>도 받아가세요!</p>
+        </div>
+
+        <section class="container">
+          <h1>포춘쿠키 열어보기</h1>
+          <p><b>쿠키를 터치</b>해 보세요!</p>
+
+          <div class="cookie-wrap">
+            <span onclick="cookieShake(this)">
+              <img
+                id="cookieImg"
+                src="/static/images/icon_cookie1.png"
+                alt="포춘쿠키"
+              />
+            </span>
+          </div>
+
+          <div class="result">
+            <p>행운이란 준비와 기회를 만났을 때 나타난다.</p>
+            <p class="point-desc">
+              오늘의 획득 포인트 : <span class="point">4점</span>
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./cookie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./setting.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body class="start">
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+      <main layout="contents">
+        <section class="container">
+          <div class="category-wrap">
+            <p class="category">알림</p>
+            <div class="set-push">
+              <p class="icon_bell">PUSH 알림 받기</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="category-wrap">
+            <p class="category">럭키포크</p>
+            <ul class="menus-wrap">
+              <li class="icon_lucky">럭키포크 소개</li>
+              <li class="icon_notice">럭키포크 공지사항</li>
+            </ul>
+          </div>
+
+          <div class="category-wrap">
+            <p class="category">지원</p>
+            <ul class="menus-wrap">
+              <li class="icon_cs">고객센터</li>
+              <li class="icon_info">앱 정보</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./setting.js"></script>
+  </body>
+</html>

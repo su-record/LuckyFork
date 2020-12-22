@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.container {
+  height: 100%;
+  padding: 60px 0 0;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.input-box {
+  padding: 0 32px;
+}
+
+.form-style .input-wrap {
+  margin-bottom: 55px;
+}
+
+.input-wrap > label {
+  margin-bottom: 15px;
+  color: #999;
+}
+
+.input-line label,
+.form-style [type='text'] {
+  padding: 25px;
+}
+
+.form-style [type='text']:focus {
+  border-color: #ef8526;
+}
+
+.input-line {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input-line label {
+  width: 333px;
+  height: 90px;
+  letter-spacing: -0.05em;
+  color: #ccc;
+  text-align: center;
+  border: 3px solid #ededed;
+  border-radius: 7px;
+}
+
+.input-line input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.input-line input:checked + label {
+  color: #ef8526;
+  border-color: #ef8526;
+}
+
+.form-style .flex-type {
+  width: 100%;
+}
+
+.form-style .flex-type select {
+  width: 215px;
+  height: 90px;
+  padding: 0 20px;
+  border: 3px solid #ededed;
+  border-radius: 7px;
+}
+
+.btn-group {
+  display: flex;
+  font-size: 0;
+}
+
+.btn-group [type='submit'],
+.btn-group [type='button'] {
+  flex: 1;
+  height: 99px;
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  line-height: 58px;
+  border: 0 none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn-group [type='submit'],
+.btn-group [type='submit']:focus {
+  color: #fff;
+  background-color: #ef8526;
+}
+
+.btn-group [type='button'],
+.btn-group [type='button']:focus {
+  color: #999;
+  background-color: #e0e0e0;
+}

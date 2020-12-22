@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./destiny.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <div class="visual">
+          <h1>四柱</h1>
+          <p>
+            이화(梨花)에 월백(月白)하고 은한(銀漢)<br />
+            이 삼경(三更)인 제 일지춘심(一枝春心)을 자규(子規) 야
+            알랴마난 다정(多情)도 병(病)인
+          </p>
+        </div>
+
+        <section class="container">
+          <section class="form">
+            <p class="user-destiny">
+              <span>홍길동</span>(<span>1980년05월10일</span>)님의 풀이입니다.
+            </p>
+
+            <div class="btn-wrap">
+              <button>다른 생일의 사주보기<i></i></button>
+              <button onclick="goCompatibility()">궁합보러 가기<i></i></button>
+            </div>
+
+            <div class="form-wrap">
+              <form class="form-style">
+                <div class="flex-type">
+                  <select name="year" id="year" class="middle">
+                    <option selected disabled>생년</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                  </select>
+
+                  <select name="month" id="month" class="small">
+                    <option selected disabled>월</option>
+                    <option value="jan">1월</option>
+                    <option value="feb">2월</option>
+                  </select>
+
+                  <select name="day" id="day" class="small">
+                    <option selected disabled>일</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+
+                  <select name="time" id="time" class="small">
+                    <option selected disabled>시</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+
+                  <select name="lns" id="lns" class="middle">
+                    <option selected disabled>음/양력</option>
+                    <option value="lunar">음력</option>
+                    <option value="solar">양력</option>
+                  </select>
+
+                  <select name="gender" id="gender" class="middle">
+                    <option selected disabled>남/녀</option>
+                    <option value="male">남성</option>
+                    <option value="female">여성</option>
+                  </select>
+
+                  <input type="submit" value="조회" />
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <div class="select-type button-group">
+            <button class="type active" data-keyname="all">전체</button>
+            <button class="type" data-keyname="tendency">성향</button>
+            <button class="type" data-keyname="love">애정운</button>
+            <button class="type" data-keyname="monthly">월간</button>
+            <button class="type" data-keyname="exorcism">살풀이</button>
+            <button class="type" data-keyname="whiteday">길일</button>
+            <button class="type" data-keyname="wealth">재물운</button>
+            <button class="type" data-keyname="marriage ">결혼운</button>
+            <button class="type" data-keyname="study">학업운</button>
+            <button class="type" data-keyname="compatibility">궁합</button>
+          </div>
+
+          <section class="result-contents">
+            <div class="result-wrap">
+              <div class="result-card">
+                <div class="pink-line"><span>丁</span><span>之</span></div>
+                <div class="green-line"><span>之</span><span>之</span></div>
+                <div class="grey-line"><span>之</span><span>成</span></div>
+                <div class="yellow-line"><span>之</span><span>之</span></div>
+                <p><span>홍길동</span>님의 사주팔자</p>
+              </div>
+
+              <div class="result-card partner-desc">
+                <div class="pink-line"><span>丁</span><span>之</span></div>
+                <div class="green-line"><span>之</span><span>之</span></div>
+                <div class="grey-line"><span>之</span><span>成</span></div>
+                <div class="yellow-line"><span>之</span><span>之</span></div>
+                <p><span>춘향</span>님의 사주팔자</p>
+              </div>
+            </div>
+
+            <article class="article user-desc">
+              <h1>
+                <span>홍길동</span>님의 <span class="choice-type">사주</span>
+              </h1>
+
+              <div class="birth-belt">
+                <img src="/static/images/character_cow.png" alt="소띠" />
+              </div>
+
+              <p>
+                봄에 초목이 비를 만나니, 무성히 자라 푸르럼이 더하다.<br />
+                재물이 풍만하니, 몸이 편안하다.<br />
+                운수는 봄같이 돌아오고, 집안에 경사가 있다.<br />
+                <br />
+                봄에 초목이 비를 만나니, 무성히 자라 푸르럼이 더하다.<br />
+                재물이 풍만하니, 몸이 편안하다.<br />
+                운수는 봄같이 돌아오고, 집안에 경사가 있다.<br />
+                <br />
+                봄에 초목이 비를 만나니, 무성히 자라 푸르럼이 더하다.<br />
+                재물이 풍만하니, 몸이 편안하다.<br />
+                운수는 봄같이 돌아오고, 집안에 경사가 있다.<br />
+                <br />
+                봄에 초목이 비를 만나니, 무성히 자라 푸르럼이 더하다.<br />
+                재물이 풍만하니, 몸이 편안하다.<br />
+                운수는 봄같이 돌아오고, 집안에 경사가 있다.<br />
+              </p>
+            </article>
+
+            <article class="article partner-desc">
+              <h1><span>홍길동</span>님과 <span>춘향이</span>의 궁합</h1>
+
+              <div class="birth-belt">
+                <img src="/static/images/character_cow.png" alt="소띠" />
+                <span class="icon_heart"></span>
+                <img src="/static/images/character_mouse.png" alt="쥐띠" />
+              </div>
+
+              <p>궁합 내용~~~</p>
+            </article>
+          </section>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      const typeBtns = document.querySelectorAll('.type');
+      const resultSection = document.querySelector('.result-contents');
+
+      includeHTML();
+
+      addActive(typeBtns, calldata);
+
+      function goCompatibility() {
+        for (let i = 0; i < typeBtns.length; i++) {
+          typeBtns[i].classList.remove('active');
+        }
+
+        document
+          .querySelector('button[data-keyname="compatibility"]')
+          .classList.add('active');
+
+        calldata();
+      }
+
+      function calldata() {
+        const res = getKeyData(typeBtns);
+
+        console.log('#####', res);
+        if (res.text === '궁합') {
+          if (!resultSection.classList.contains('compatibility')) {
+            resultSection.classList.add('compatibility');
+          }
+        } else {
+          resultSection.classList.remove('compatibility');
+          document.querySelector('.choice-type').innerText =
+            res.text === '전체' ? '사주' : res.text;
+        }
+      }
+    </script>
+  </body>
+</html>

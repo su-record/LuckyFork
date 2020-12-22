@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./center.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+
+      <main layout="contents">
+        <section class="container">
+          <div class="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'faq')">
+              FAQ
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'notice')">
+              NOTICE
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'qna')">
+              Q&A
+            </button>
+          </div>
+
+          <section id="faq" class="tabContent" style="display: block">
+            <ul class="accordion-list">
+              <li>
+                <button class="accordion">
+                  01월 홈 트레이닝 이벤트 01월 홈 트레이닝 이벤트 01월 홈
+                  트레이닝 이벤트 01월 홈
+                </button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+              <li>
+                <button class="accordion">01월 홈 트레이닝 이벤트</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section id="notice" class="tabContent">
+            <ul class="accordion-wrap">
+              <li>
+                <button class="accordion">notice list 1</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+              <li>
+                <button class="accordion">notice list 2</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section id="qna" class="tabContent">
+            <nav class="lnb">
+              <a class="active" href="javascript:void(0)">전체</a>
+              <a href="javascript:void(0)">결제</a>
+              <a href="javascript:void(0)">구매</a>
+              <a href="javascript:void(0)">쿠폰</a>
+              <a href="javascript:void(0)">프로필</a>
+              <a href="javascript:void(0)">환불</a>
+              <a href="javascript:void(0)">궁합</a>
+            </nav>
+
+            <nav class="question-nav">
+              <a href="javascript:void(0)">나의 문의보기</a>
+              <a href="/question">문의 하기</a>
+            </nav>
+
+            <div>
+              <ul class="accordion-wrap">
+                <li>
+                  <button class="accordion">
+                    qna list 1
+                    <span class="state">
+                      <span class="complete" style="display: block"
+                        >답변완료</span
+                      >
+                      <span class="comfirm">문의확인</span>
+                      <span class="receipt">문의접수</span>
+                    </span>
+                  </button>
+                  <div class="panel">
+                    <p class="desc">
+                      럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                      준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                      blablablablablablablablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <button class="accordion">
+                    qna list 2
+                    <span class="state">
+                      <span class="complete">답변완료</span>
+                      <span class="comfirm" style="display: block"
+                        >문의확인</span
+                      >
+                      <span class="receipt">문의접수</span>
+                    </span>
+                  </button>
+                  <div class="panel">
+                    <p class="desc">
+                      럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                      준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                      blablablablablablablablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <button class="accordion">
+                    qna list 2
+                    <span class="state">
+                      <span class="complete">답변완료</span>
+                      <span class="comfirm">문의확인</span>
+                      <span class="receipt" style="display: block"
+                        >문의접수</span
+                      >
+                    </span>
+                  </button>
+                  <div class="panel">
+                    <p class="desc">
+                      럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                      준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                      blablablablablablablablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      const accordions = document.querySelectorAll('.accordion');
+      const lnbAnchors = document.querySelectorAll('.lnb a');
+
+      includeHTML();
+
+      accordion(accordions);
+      addActive(lnbAnchors);
+    </script>
+  </body>
+</html>

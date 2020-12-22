@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+.visual {
+  display: flex;
+  height: 381px;
+  padding: 66px 0 0 74px;
+  background-image: url(/static/images/mypage_bg.png);
+}
+
+.profile-img-wrap {
+  margin-right: 30px;
+  text-align: center;
+}
+
+.profile-img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 13px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.username {
+  font-family: 'NotoSansCJKKR-Bold' !important;
+  letter-spacing: -0.05em;
+  color: #000;
+}
+
+.profile-desc-wrap {
+  padding-top: 30px;
+}
+
+.profile-desc-wrap dl,
+.profile-desc-wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+}
+
+.profile-desc-wrap dt {
+  margin-right: 5px;
+  font-family: 'NotoSansCJKKR-Bold' !important;
+}
+
+.profile-desc-wrap dt,
+.profile-desc-wrap dd {
+  line-height: 1.4;
+  color: #000;
+}
+
+.profile-desc-wrap dl {
+  margin-bottom: 20px;
+}
+
+.profile-desc-wrap li {
+  padding: 0 15px;
+  line-height: 56px;
+  color: #000;
+}
+.profile-desc-wrap li:first-child {
+  padding-left: 0;
+  position: relative;
+}
+
+.profile-desc-wrap li:first-child:after {
+  content: '';
+  height: 20px;
+  margin-top: -9px;
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  border-right: 3px solid #e7b68a;
+}
+
+.profile-desc-wrap .modify {
+  flex: 1;
+  padding: 0;
+  text-align: right;
+}
+
+.modify a {
+  display: inline-block;
+  width: 140px;
+  height: 56px;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+  color: #fff;
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 7px;
+}
+
+.container {
+  padding-top: 60px;
+}
+
+.point-wrap {
+  margin-bottom: 40px;
+  border: 2px solid #ededed;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.point-wrap .desc {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.point-wrap .desc li {
+  flex: 1;
+  position: relative;
+  line-height: 90px;
+  text-align: center;
+}
+
+.point-wrap .desc li,
+.point-wrap .desc li span {
+  font-size: 32px;
+  letter-spacing: -0.05em;
+}
+
+.point-wrap .point {
+  font-family: 'NotoSansCJKKR-Bold' !important;
+  color: #222;
+}
+
+.point-wrap .desc li:first-child:after {
+  content: '';
+  height: 24px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  border-right: 3px solid #cecece;
+}
+
+.point-wrap .history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  height: 190px;
+}
+
+.point-wrap .history li {
+  display: flex;
+  justify-content: center;
+}
+
+.point-wrap .history li:first-child {
+  margin-bottom: 38px;
+}
+
+.point-wrap .history span {
+  flex: 1;
+}
+
+.point-wrap .history span,
+.point-wrap .history a {
+  letter-spacing: -0.05em;
+}
+
+.point-wrap .history a {
+  padding-bottom: 3px;
+  font-size: 24px;
+  color: #ef8526;
+  border-bottom: 2px solid #f5b67d;
+}
+
+.point-wrap .history i {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  margin-left: 2px;
+  background-image: url(/static/images/icon_more.png);
+}
+
+.point-wrap .buying {
+  margin-left: 32px;
+}
+
+.nav-wrap {
+  display: flex;
+  margin-bottom: 60px;
+  border: 2px solid #ededed;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.nav-wrap a {
+  flex: 1;
+  display: block;
+  height: 196px;
+  padding-top: 120px;
+  position: relative;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #222;
+  background: no-repeat center 49px;
+}
+
+.nav-wrap a:after {
+  content: '';
+  height: 90px;
+  margin-top: -45px;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  border-right: 3px solid #ededed;
+}
+
+.nav-wrap a:first-child:after {
+  content: none;
+}
+
+.nav-wrap .btn-alarm {
+  background-image: url(/static/images/icon_alarm.png);
+}
+
+.nav-wrap .btn-event {
+  background-image: url(/static/images/icon_event.png);
+}
+
+.nav-wrap .btn-center {
+  background-image: url(/static/images/icon_center.png);
+}
+
+.lucky-wrap {
+  margin-bottom: 60px;
+}
+
+.lucky-wrap .tabs {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.tablinks {
+  flex: 1;
+  height: 72px;
+  font-family: 'NotoSansCJKKR-DemiLight', sans-serif !important;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #f5f5f5;
+}
+
+.tablinks.active {
+  color: #fff;
+  background-color: #1f1f1f;
+}
+
+.calendar-wrap {
+  display: none;
+  width: 418px;
+  height: 366px;
+  margin: 19px auto 45px;
+}
+
+.tavo-calendar__header {
+  height: 85px;
+}
+
+.tavo-calendar__month-label {
+  color: #fff;
+}
+
+.tavo-calendar__week-names {
+  background-color: #fff;
+}
+
+.tavo-calendar__weekday {
+  font-size: 24px;
+  line-height: 52px;
+}
+
+.tavo-calendar__day span {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.progress-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.progress-wrap li {
+  text-align: center;
+}
+
+.progress {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+  margin-top: -40px;
+}
+
+.progress-circle-back {
+  fill: none;
+  stroke: #f5f5f5;
+  stroke-width: 10px;
+}
+
+.progress-circle-prog {
+  fill: none;
+  stroke: #ef8526;
+  stroke-width: 10px;
+  stroke-dasharray: 0 999;
+  stroke-dashoffset: 0px;
+  transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  text-align: center;
+  font-family: 'Roboto-Medium', sans-serif !important;
+  font-size: 46px;
+  font-weight: bold;
+  color: #ef8526;
+}
+
+.progress-text .percent {
+  font-family: 'Roboto-Medium', sans-serif !important;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ef8526;
+}
+
+.progress-name {
+  line-height: 36px;
+  letter-spacing: -0.05em;
+  color: #333;
+}
+
+.user-desc {
+  margin-bottom: 50px;
+  line-height: 40px;
+}
+
+.result-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result-card > div {
+  margin-right: 2px;
+}
+
+.pink-line span {
+  background-color: #ffdddd;
+}
+
+.green-line span {
+  background-color: #d9f9d9;
+}
+
+.grey-line span {
+  background-color: #dfdcdc;
+}
+
+.yellow-line span {
+  background-color: #fff5d0;
+}
+
+.result-card > div > span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-top: 2px;
+  font-size: 64px;
+  text-align: center;
+  color: #222;
+  line-height: 120px;
+}
+
+.result-card > div > span:first-child {
+  margin-top: 0;
+}
+
+.result-card a {
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'NotoSansCJKKR-Bold', sans-serif !important;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #222;
+}

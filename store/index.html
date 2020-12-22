@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./store.css" />
+    <script src="/static/js/includeHTML.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header
+        layout="header"
+        include-html="/layout/headerBackspace.html"
+      ></header>
+      <main layout="contents">
+        <section class="container">
+          <p class="desc">구매안내 설명~~</p>
+
+          <form id="formData" class="form-style">
+            <div class="input-wrap">
+              <label class="radio-button">
+                <input
+                  type="radio"
+                  class="radio-button__input"
+                  name="point"
+                  value="2,200"
+                />
+                <span class="radio-button__control"></span>
+                <span class="radio-button__label">
+                  <span class="point dc">2,200</span>원
+                  <i class="arrow"></i>
+                  <span class="point">2,200</span>Point
+                </span>
+              </label>
+            </div>
+
+            <div class="input-wrap">
+              <label class="radio-button">
+                <input
+                  type="radio"
+                  class="radio-button__input"
+                  name="point"
+                  value="3,200"
+                />
+                <span class="radio-button__control"></span>
+                <span class="radio-button__label">
+                  <span class="point dc">3,200</span>원
+                  <i class="arrow"></i>
+                  <span class="point">3,200</span>Point
+                </span>
+              </label>
+            </div>
+
+            <div class="input-wrap">
+              <label class="radio-button">
+                <input
+                  type="radio"
+                  class="radio-button__input"
+                  name="point"
+                  value="4,200"
+                />
+                <span class="radio-button__control"></span>
+                <span class="radio-button__label">
+                  <span class="point dc">4,200</span>원
+                  <i class="arrow"></i>
+                  <span class="point">4,200</span>Point
+                </span>
+              </label>
+            </div>
+
+            <div class="input-wrap">
+              <label class="radio-button">
+                <input
+                  type="radio"
+                  class="radio-button__input"
+                  name="point"
+                  value="5,200"
+                />
+                <span class="radio-button__control"></span>
+                <span class="radio-button__label">
+                  <span class="point dc">5,200</span>원
+                  <i>화살표</i>
+                  <span class="point">5,200</span>Point
+                </span>
+              </label>
+            </div>
+
+            <p class="selected-notice">
+              <span>홍길동</span>님은
+              <span class="selected-point point"></span>원 복주머니를
+              선택하셨습니다.
+            </p>
+
+            <div class="btn-wrap">
+              <input type="submit" value="구매하기" />
+              <input type="button" value="취소" onclick="cancel()" />
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script src="./store.js"></script>
+  </body>
+</html>

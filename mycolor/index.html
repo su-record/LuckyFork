@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=750,
+    user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <title>Lucky Fork</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="./color.css" />
+    <script src="/static/js/includeHTML.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body>
+    <div layout="app">
+      <header layout="header" include-html="/layout/header.html"></header>
+      <main layout="contents">
+        <section class="container">
+          <div class="content-title">
+            <h1>나만의 컬러 찾기</h1>
+            <p class="ellipsis line-02">
+              사람들은 오행을 가지고 태어나는데 문제 어쩌구 저쩌구 어쩌구
+              사람들은 오행을 가지고 태어나는데 본래 어쩌구 저쩌구 이래저래
+              블라블라 블라블라
+            </p>
+          </div>
+
+          <div class="form-wrap">
+            <form class="form-style">
+              <div class="flex-type">
+                <select name="year" id="year" class="middle">
+                  <option selected disabled>생년</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                </select>
+
+                <select name="month" id="month" class="small">
+                  <option selected disabled>월</option>
+                  <option value="jan">1월</option>
+                  <option value="feb">2월</option>
+                </select>
+
+                <select name="day" id="day" class="small">
+                  <option selected disabled>일</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+
+                <select name="time" id="time" class="small">
+                  <option selected disabled>시</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+
+                <select name="lns" id="lns" class="middle">
+                  <option selected disabled>음/양력</option>
+                  <option value="lunar">음력</option>
+                  <option value="solar">양력</option>
+                </select>
+
+                <select name="gender" id="gender" class="middle">
+                  <option selected disabled>남/녀</option>
+                  <option value="male">남성</option>
+                  <option value="female">여성</option>
+                </select>
+
+                <input type="submit" value="조회" />
+              </div>
+            </form>
+          </div>
+
+          <section class="result-contents">
+            <div class="result-title">
+              <h1 class="bitrth">
+                <i class="snake"></i>1978년 8월 8일 丑시(축시)
+              </h1>
+            </div>
+            <ul class="progress-wrap">
+              <li>
+                <div class="progress">
+                  <svg
+                    class="progress-circle"
+                    width="200px"
+                    height="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="progress-circle-back"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                    <circle
+                      class="progress-circle-prog"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                  </svg>
+                  <div class="progress-text">
+                    <span class="label">목(木)</span>
+                    <span class="progress-size" data-progress="0">
+                      0<span class="percent">%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <span class="progress-desc">25이하 - 기운부족</span>
+                  <a href="">컬러솔루션<i></i></a>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <svg
+                    class="progress-circle"
+                    width="200px"
+                    height="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="progress-circle-back"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                    <circle
+                      class="progress-circle-prog"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                  </svg>
+                  <div class="progress-text">
+                    <span class="label">화(火)</span>
+                    <span class="progress-size" data-progress="0">
+                      0<span class="percent">%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <span class="progress-desc"
+                    >50이하 - 적정<br />긍정적 성향</span
+                  >
+                  <a href="">컬러솔루션<i></i></a>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <svg
+                    class="progress-circle"
+                    width="200px"
+                    height="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="progress-circle-back"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                    <circle
+                      class="progress-circle-prog"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                  </svg>
+                  <div class="progress-text">
+                    <span class="label">토(土)</span>
+                    <span class="progress-size" data-progress="0">
+                      0<span class="percent">%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <span class="progress-desc">45이하 - 기운높음</span>
+                  <a href="">컬러솔루션<i></i></a>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <svg
+                    class="progress-circle"
+                    width="200px"
+                    height="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="progress-circle-back"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                    <circle
+                      class="progress-circle-prog"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                  </svg>
+                  <div class="progress-text">
+                    <span class="label">목</span>
+                    <span class="progress-size" data-progress="0">
+                      0<span class="percent">%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <span class="progress-desc">25이하 - 기운부족</span>
+                  <a href="">컬러솔루션<i></i></a>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <svg
+                    class="progress-circle"
+                    width="200px"
+                    height="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="progress-circle-back"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                    <circle
+                      class="progress-circle-prog"
+                      cx="90"
+                      cy="90"
+                      r="85"
+                    ></circle>
+                  </svg>
+                  <div class="progress-text">
+                    <span class="label">목</span>
+                    <span class="progress-size" data-progress="0">
+                      0<span class="percent">%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <span class="progress-desc">45이상 - 기운높음</span>
+                  <a href="">컬러솔루션<i></i></a>
+                </div>
+              </li>
+              <li class="result-type">
+                <dl>
+                  <dt>나의 대표타입</dt>
+                  <dd>
+                    <span class="type">水</span>
+                    <span class="desc">
+                      온화한 야심가<br>
+                      바다의 호랑이
+                    </span>
+                  </dd>
+                </이>
+              </li>
+            </ul>
+
+            <ul class="accordion-list">
+              <li>
+                <button class="accordion">사주컨텐츠 01</button>
+                <div class="panel">
+                  <p class="desc">
+                    <span class="ellipsis line-04">
+                      럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                      준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                      blablablablablablablablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                      blablablablablablablablablablablabla blablablablablabla
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <button class="accordion">사주컨텐츠 02</button>
+                <div class="panel">
+                  <p class="desc">
+                    럭키 포크에서는 2021년 01월달의 이벤트를 다음과 같이
+                    준비했습니다. 많은 참여 부탁드려요. 상세 정보
+                    blablablablablablablablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                    blablablablablablablablablablablabla blablablablablabla
+                  </p>
+                </div>
+              </li>
+              <li class="product">
+                <button class="accordion">사주컨텐츠 03</button>
+                <div class="panel">
+                  <ul class="product-list">
+                    <li class="destiny-item">
+                      <div class="img-wrap">
+                        <img src="/static/images/product.png" alt="상품이미지">
+                      </div>
+                      <a href="">상품보러가기<i></i></a>
+                    </li>
+                    <li class="destiny-item">
+                      <div class="img-wrap">
+                        <img src="/static/images/product.png" alt="상품이미지">
+                      </div>
+                      <a href="">상품보러가기<i></i></a>
+                    </li>
+                    <li class="destiny-item">
+                      <div class="img-wrap">
+                        <img src="/static/images/product.png" alt="상품이미지">
+                      </div>
+                      <a href="">상품보러가기<i></i></a>
+                    </li>
+                    <li class="destiny-item">
+                      <div class="img-wrap">
+                        <img src="/static/images/product.png" alt="상품이미지">
+                      </div>
+                      <a href="">상품보러가기<i></i></a>
+                    </li>
+                    <li class="destiny-item">
+                      <div class="img-wrap">
+                        <img src="/static/images/product.png" alt="상품이미지">
+                      </div>
+                      <a href="">상품보러가기<i></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </main>
+      <footer layout="footer" include-html="/layout/footer.html"></footer>
+    </div>
+
+    <script>
+      const accordions = document.querySelectorAll('.accordion');
+
+      includeHTML();
+
+      accordion(accordions);
+    </script>
+    <script src="./color.js"></script>
+  </body>
+</html>
